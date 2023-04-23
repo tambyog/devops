@@ -6,7 +6,7 @@ COPY nodeapp_test/package.json
 
 RUN npm install
 
-COPY . .
+COPY nodeapp_test nodeapp_test
 
 EXPOSE 4000
 CMD [ "node", "index.js" ]
